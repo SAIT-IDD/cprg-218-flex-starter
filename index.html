@@ -5,64 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Image Gallery</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Basic Reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-      }
-
-      .gallery-container {
-        display: flex;
-        flex-wrap: wrap;
-        /* gap: 50px; */
-        justify-content: center;
-        /* width: 1300px; */
-      }
-
-      .gallery-item {
-        flex: 1 1 calc(33.333% - 20px);
-        /* This makes each gallery item flexible. The calc(33.333% - 20px) ensures that the items take up one-third of the container width minus the margin. This creates a three-column layout with space between the items. All three needs to be considered */
-        margin: 10px;
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-
-      .gallery-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .gallery-item:hover {
-        transform: scale(1.05);
-      }
-
-      /* Responsive Adjustments */
-      @media (max-width: 768px) {
-        .gallery-item {
-          flex: 1 1 calc(50% - 20px);
-        }
-      }
-
-      @media (max-width: 480px) {
-        .gallery-item {
-          flex: 1 1 100%;
-        }
-      }
-    </style>
   </head>
 
   <body>
