@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background: #ccc;
+        height: 50px;
+        align-items: center;
+      }
+      .nav-item {
+        position: relative;
+        padding: 10px;
+      }
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #eee;
+        padding: 10px;
+        white-space: nowrap;
+      }
+      .nav-item:hover .dropdown {
+        display: block;
+      }
+      @media (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-item">Home</div>
+      <div class="nav-item">
+        About
+        <div class="dropdown">Dropdown Content</div>
+      </div>
+      <div class="nav-item">
+        Services
+        <div class="dropdown">Dropdown Content</div>
+      </div>
+      <div class="nav-item">Contact</div>
+    </nav>
+  </body>
+</html>

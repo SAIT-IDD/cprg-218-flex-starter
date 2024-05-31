@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .feature-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .feature-box {
+        background: #ccc;
+        width: 45%;
+        height: 200px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .feature-box:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+      }
+      .description {
+        display: none;
+      }
+      .feature-box:hover .description {
+        display: block;
+      }
+      @media (max-width: 600px) {
+        .feature-box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="feature-container">
+      <div class="feature-box">
+        <div class="icon">Icon 1</div>
+        <h3>Feature 1</h3>
+        <p class="description">Description of Feature 1</p>
+      </div>
+      <div class="feature-box">
+        <div class="icon">Icon 2</div>
+        <h3>Feature 2</h3>
+        <p class="description">Description of Feature 2</p>
+      </div>
+      <div class="feature-box">
+        <div class="icon">Icon 3</div>
+        <h3>Feature 3</h3>
+        <p class="description">Description of Feature 3</p>
+      </div>
+      <div class="feature-box">
+        <div class="icon">Icon 4</div>
+        <h3>Feature 4</h3>
+        <p class="description">Description of Feature 4</p>
+      </div>
+    </div>
+  </body>
+</html>

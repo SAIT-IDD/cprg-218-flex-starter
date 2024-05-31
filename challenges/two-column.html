@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Column</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+      .sidebar {
+        background: #ccc;
+        width: 250px;
+      }
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .header {
+        background: #eee;
+        padding: 10px;
+      }
+      .content {
+        background: #ddd;
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">Sidebar</aside>
+      <div class="main-content">
+        <header class="header">Header</header>
+        <div class="content">Scrollable Content</div>
+      </div>
+    </div>
+  </body>
+</html>
