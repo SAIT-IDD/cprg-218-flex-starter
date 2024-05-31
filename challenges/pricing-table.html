@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .pricing-table {
+        display: flex;
+        justify-content: space-around;
+      }
+      .pricing-plan {
+        background: #ccc;
+        padding: 20px;
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .pricing-plan.popular {
+        background: #ffeb3b;
+      }
+      .pricing-plan:hover {
+        transform: scale(1.05);
+      }
+      .features {
+        list-style: none;
+        padding: 0;
+      }
+      .features li {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-table">
+      <div class="pricing-plan popular">
+        <h3>Standard Plan</h3>
+        <ul class="features">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <h3>Basic Plan</h3>
+        <ul class="features">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <h3>Premium Plan</h3>
+        <ul class="features">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

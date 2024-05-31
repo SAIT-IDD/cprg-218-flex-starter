@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header and Footer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .header,
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #ccc;
+      }
+      .main-content {
+        display: flex;
+        flex: 1;
+      }
+      .sidebar {
+        background: #eee;
+        width: 200px;
+      }
+      .content {
+        background: #ddd;
+        flex: 1;
+        overflow-y: auto;
+      }
+      .footer {
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Logo</div>
+        <nav class="nav">Navigation</nav>
+        <div class="search">Search</div>
+      </header>
+      <div class="main-content">
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">Main Content</main>
+      </div>
+      <footer class="footer">
+        <div class="contact-info">Contact Info</div>
+        <div class="social-media">Social Media Links</div>
+        <div class="newsletter">Newsletter Signup</div>
+      </footer>
+    </div>
+  </body>
+</html>
